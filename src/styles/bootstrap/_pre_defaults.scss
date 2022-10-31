@@ -1,0 +1,23 @@
+
+.btn-bolt {
+  @include button-variant($primary, $primary);
+  color: #fff;
+}
+
+
+
+.form-control.is-invalid{
+  box-shadow: 0 0 0 0.075rem rgb(220 53 69 / 100%);
+  &:focus{
+    box-shadow: 0 0 0 0.075rem rgb(220 53 69 / 100%);
+  }
+}
+
+.custom-control-label::before {
+  background: #FFF;
+}
+
+.custom-control-input.is-invalid ~ .custom-control-label::before {
+  background: rgb(255, 233, 242);
+  box-shadow: 0 0 0 0.075rem rgb(220 53 69);
+}

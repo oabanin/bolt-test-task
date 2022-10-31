@@ -1,0 +1,15 @@
+.text-title{
+  font-size: 26px;
+  @media(min-width: 992px){
+    font-size: 60px;
+  }
+}
+
+.p-banner{
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  @media(min-width: 992px){
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    }
+}

@@ -1,0 +1,40 @@
+.btn-select{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color:  #495057;
+  background-color: rgb(240, 240, 240);
+  border: 1px solid #ced4da;
+  gap: 10px;
+
+  height: calc(1.5em + 1rem + 2px);
+  padding: 0.5rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1.5;
+  border-radius: 0.3rem;
+  i{
+    font-size: 0.85rem;
+    &:before {
+      font-weight: bold !important;
+    }
+  }
+  &.is-invalid{
+    box-shadow: 0 0 0 0.075rem rgb(220 53 69 / 100%);
+    border-color: rgb(220 53 69);
+  }
+}
+
+.dropdown-menu{
+  &.show{
+    top:auto;
+    max-height: 200px;
+    overflow: auto;
+  }
+}
+
+.dropdown-overlay{
+  position: fixed;
+  inset:0;
+  z-index: 1;
+}
